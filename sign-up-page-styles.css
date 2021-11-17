@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+}
+a{
+    color:unset;
+    text-decoration: none;
+}
+header{
+    background-color: #f8f8f8;
+    padding:20px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+header ul{
+    display: grid;
+    grid-template-columns:repeat(9,auto);
+    /* gap:20px; */
+    padding:0 30px;
+    place-items: center;
+}
+header ul li{
+    display: inline-block;
+    padding:0 20px;
+    color:#9D9D9D;
+    font-family: 'Lato', sans-serif;
+}
+header ul li:hover{
+    transform: scale(1.1);
+    color:#141E61;
+}
+.brand{
+    font-family: 'Anton', sans-serif;
+    font-size:30px;
+    color:#046582;
+}
+.additional{
+    visibility:hidden;
+}
+.log-in,.sign-up{
+    display: grid;
+    justify-self: end;
+    padding: 0 5px;
+}
+.log-in{
+    margin-left:250px;
+    color:#046582;
+}
+.sign-up{
+    background-color:  #046582;
+    border-radius: 10px;
+    padding:10px 25px;
+    color:white;
+}
+.sign-up:hover{
+    background-color: #0A1931;
+    color:white;
+}
+main{
+    display: grid;
+    grid-template-columns: auto 800px;
+
+}
+.b-color{
+    background-color: black;
+}
+#page-intro{
+    height:90vh;
+    background-image: url(https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    opacity:0.8;
+   position: relative;
+}
+.title-div{
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    padding:30px;
+    width:50%;
+    
+}
+.join-title{
+    
+    color:white;
+    font-size:30px;
+    text-align:left;
+    
+}
+#sign-up-form{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    place-items: center;
+    gap:15px;
+    padding:30px;
+}
+#sign-up-form h1{
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    display:block;
+    width:100%;
+    font-size:15px;
+    padding:10px 15px;
+    margin-bottom: 30px;
+}
+input[type="checkbox"]{
+    display: inline-block;
+    width:5%;
+    margin-top:20px;
+    transform: scale(1.5);
+}
+label{
+
+    font-size: 15px;
+}
+select{
+    display: block;
+    width:100%;
+    font-size:15px;
+    padding:10px 15px;
+}
+.submit-form-button{
+    padding:10px 20px;
+    background-color: #d23228;
+    color:white;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border:none;
+}
+.submit-form-button:hover{
+    transform:scale(1.1);
+    background-color: #FF2626;
+}
+.social-media-buttons{
+    display: grid;
+    gap:10px;
+    margin-right:140px;
+}
+.social-media-buttons h3{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+.signup-media{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    gap:10px;
+}
+.signup-media a:hover{
+    transform: scale(1.1);
+    
+}
+.signup-media a{
+    padding:10px 25px;
+    display: grid;
+    grid-template-columns: 40px auto;
+   
+    place-items:start;
+}
+.apple{
+    background-color: black;
+    color:white;
+}
+.apple:hover{
+    margin:0 10px;
+}
+.facebook{
+    background-color: #1877f2;
+    color:white;
+}
+.facebook:hover{
+    margin:0 10px;
+}
+.google{
+    background-color: #4285f4;
+    color:white;
+}
+.google:hover{
+    margin:0 10px;
+}
+.microsoft{
+    background-color: #2f2f2f;
+    color:white;
+}
+.microsoft:hover{
+    margin:0 10px;
+}
+.button-icon{
+    width:20px;
+
+}
